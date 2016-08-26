@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>江苏云知智能科技有限公司</title>
+<link href="css/index.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+<header style="z-index: 25;">
+<div class="tY0">
+<h1><a href="https://95598.gd.csg.cn/"><img src="images/NFlogo.png" alt="广东南方电网公司网上营业厅" name="NFlogo" height="50" id="NFlogo"/></a></h1>
+<ul class="tO0">
+<li class="pR0">林某某，你好！</li>
+<li class="rZ0 pn1">|</li>
+<li class="rZ0"><a href="javascript:;" onClick="ypgj('用户管理','user.html','1024px','768px')" title="用户管理" target="_self" class="sh0 nui-txt-link">用户管理</a></li>
+<li class="rZ0 pn1">|</li>
+<li class="rZ0"><a href="login.html" class="sh0 nui-txt-link" target="_self">注销</a></li>
+</ul>
+</div>
+</header>
+
+<div class="HuiTab">
+  <div class="tabBar cl">
+  <span class="tA0"><a href="map.html" target="myiframe">分布图</a></span>
+  <span class="tA0"><a href="javascript:void(0)" id="td" onClick="changeToTd();" target="myiframe">工地管理</a></span>
+  <span class="tA0"><a href="javascript:void(0)" id="tz" onClick="changeToTz();" target="myiframe">设备管理</a></span>
+  <span class="tA0"><a href="javascript:void(0)" id="tj" onClick="changeToTj();" target="myiframe">视频管理</a></span>
+  </div>
+  <div class="sJ0"></div>
+  <div class="tabCon">
+  
+ <iframe name="myiframe" src="map.html" id="iframepage" frameborder="0" scrolling="no" width="100%" height="862px" marginheight="0" marginwidth="0" style="background:#FFF"></iframe>  
+
+</div>
+ 
+ 
+  
+</div>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/2.1/layer.js"></script>
+<script type="text/javascript" src="js/My97DatePicker/WdatePicker.js"></script> 
+<script type="text/javascript" src="js/H-ui.js"></script>
+<script type="text/javascript" src="js/H-ui.admin.js"></script>
+<script type="text/javascript">
+$(function(){
+$.Huitab("#tab_demo .tabBar span","#tab_demo .tabCon","current","click","0");
+});
+
+/*修改密码*/
+function ypgj(title,url,w,h){
+	layer.open({
+    type: 2,
+    title: title,
+    shadeClose: true,
+    shade: 0.8,
+    area: [w, h],
+    content: url //iframe的url
+}); 
+}
+function changeToTd()
+	{
+		$("#iframepage").attr('src',"build.html"); 
+	}
+	function changeToTz()
+	{
+		$("#iframepage").attr('src',"equip.html"); 
+	}	
+	function changeToTj()
+	{
+		$("#iframepage").attr('src',"vedio.html"); 
+	}			
+</script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>监控系统</title>
+<link type="text/css" rel="stylesheet" href="css/test.css">
+<link href="css/Aliiconfont/iconfont.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div style="width:100%;"> 
+ <div class="yzrtv">
+   <span style="font-weight:bold;">工地名称：</span><span style="padding-right:6px;">阳光一百</span><span style="font-weight:bold;">|</span>
+   <span style="font-weight:bold;">工地位置：</span><span>2.35.67.42.56.55.56.55</span>   
+</div>  
+ <div class="yzvedio1" onLoad="Onload();"> 
+ <div align="center">  
+  <object CLASSID='CLSID:B2F105BB-B7D5-44E0-9C77-C4FB6811481A' id='ocx' width="1500px" height="1000px" VIEWASTEXT>
+    <img src="images/1444899312793.jpg" width="1500px" height="1000px" />
+    
+  </object>
+  </div>
+ <div style="margin-top:5px;" align="center">
+<a href="#" class="button white" onClick="OnPlay1();">登录</a>
+<a href="#" class="button white" onClick="OnPlay2();"><i class="iconfont">&nbsp;&nbsp;&#xe624;&nbsp;&nbsp;</a>
+<a href="#" class="button white" onClick=""><i class="iconfont">&nbsp;&nbsp;&#xe625;&nbsp;&nbsp;</a>
+<a href="#" class="button1 white" onClick="OnUp();"><i class="iconfont">&nbsp;&#xe623;&nbsp;</i></a>
+<a href="#" class="button1 white" onClick="OnDown();"><i class="iconfont">&nbsp;&#xe603;&nbsp;</i></a>
+<a href="#" class="button1 white" onClick="OnLeft();"><i class="iconfont">&nbsp;&#xe622;&nbsp;</i></a>
+<a href="#" class="button1 white" onClick="OnRight();"><i class="iconfont">&nbsp;&#xe604;&nbsp;</i></a>
+</div>
+</div>
+<div style="width:100%;">
+<div class="yzrl">
+   <label style="font-weight:bold;">人脸检测：</label>
+   <input  type="checkbox" checked="checked"  /> <button class="blue smallrouded btn1">手动</button> 
+   <input type="checkbox"/>
+   <button  class="white smallrouded btn2" >自动</button>
+   <button  class="white smallrouded btn2" style="margin-left:20px;">白名单</button>
+   <button  class="white smallrouded btn2" >黑名单</button></div>
+   <div class="yzr2">
+     <table class="tt" width="80%" border="0" cellspacing="1" cellpadding="0" align="left" >
+    
+      <tr style="line-height:2.0;">
+       <td>序号</td>
+       <td>人员编号</td>
+       <td>姓名</td>
+       <td>检测结果</td>
+       <td>身份信息</td>
+     </tr>
+     <tr class="nopass">
+       <td>1</td>
+       <td>12345678</td>
+       <td>林某</td>
+       <td>不通过</td>
+       <td>非法人员</td>
+     </tr>
+     <tr class="pass">
+       <td>2</td>
+       <td>987654321</td>
+       <td>王某</td>
+       <td>通过</td>
+       <td>技术员</td>
+     </tr>
+   </table>
+
+</div>  
+</div>
+</div>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".btn1").click(function(){
+  $("table").show();
+  });
+  $(".btn2").click(function(){
+  $("table").show();
+  });
+});
+</script>
+
+
+
+
+
+
+</body>
+</html>

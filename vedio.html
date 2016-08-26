@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>视频监控</title>
+<link href="css/vedio.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div style="float:left; width:10%;">
+<ul id="nav">
+<li><a href="vd9.html" target="myiframe1">施工工地一</a>
+ <ul class="collapsed">
+ <li><a href="javascript:void(0)" id="tz" onClick="changeToTz();" target="myiframe1">视频监控一</a></li>
+ <li><a href="javascript:void(0)" id="td" onClick="changeToTd();" target="myiframe1">视频监控二</a></li>
+ <li><a href="javascript:void(0)" id="tj" onClick="changeToTj();" target="myiframe1">视频监控三</a></li>
+ </ul>
+</li>
+
+<li><a href="vd9.html" target="myiframe1">施工工地二</a>
+ <ul class="collapsed">
+ <li><a href="javascript:void(0)" id="tz" onClick="changeToTz();" target="myiframe1">视频监控一</a></li>
+ <li><a href="javascript:void(0)" id="td" onClick="changeToTd();" target="myiframe1">视频监控二</a></li>
+ <li><a href="javascript:void(0)" id="tj" onClick="changeToTj();" target="myiframe1">视频监控三</a></li>
+ </ul>
+</li>
+
+<li style="border-bottom:1px solid #b7b7b7;"><a href="javascript:void(0)" onClick="goback();">返回</a></li>
+</ul>
+
+
+</div>
+
+  <div style="float:left; width:90%">   
+  <iframe name="myiframe1" src="vd9.html" id="iframepage1" frameborder="0" scrolling="no" width="100%" height="862px" marginheight="0" marginwidth="0"></iframe>  
+  </div>
+  
+  
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/2.1/layer.js"></script>
+<script type="text/javascript" src="js/My97DatePicker/WdatePicker.js"></script> 
+<script type="text/javascript" src="js/H-ui.js"></script>
+<script type="text/javascript" src="js/H-ui.admin.js"></script>
+<script type="text/javascript">
+function changeToTj()
+	{
+		$("#iframepage1").attr('src',"vd6.html"); 
+	}
+	
+	function changeToTz()
+	{
+		$("#iframepage1").attr('src',"vd1.html"); 
+	}
+	
+	
+	function changeToTd()
+	{
+		$("#iframepage1").attr('src',"vd4.html"); 
+	}		
+</script>
+<script>
+function goback(){
+ history.go(-1);//返回或者history.back();
+}
+function go(){
+history.go(1);//前进或者history.forward();
+}
+</script>
+
+
+</body>
+</html>
