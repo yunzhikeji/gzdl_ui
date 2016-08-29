@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>列表</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Content/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link href="Content/dist/css/AdminLTE.min.css" rel="stylesheet" />
+
+    <link href="./Content/dist/css/skins/_all-skins.css" rel="stylesheet" />
+    <link href="js/miniui/themes/default/miniui.css" rel="stylesheet" />
+    <link href="js/miniui/themes/blue2010/skin.css" rel="stylesheet" />
+
+    <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="Content/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="Content/dist/js/app.min.js"></script>
+    <script src="js/miniui/miniui.js"></script>
+    <script src="js/miniui/locale/zh_CN.js"></script>
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+
+            <section class="content-header">
+      <h1>
+       人员管理
+        <small>人员录入页面分电力系统员工和外围施工人员</small>
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> 主页</a></li>
+        <li class="active">人员管理</li>
+      </ol>
+    </section>
+            <section class="content">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="box box-primary">
+                            <div class="box-header">
+                                <h3 class="box-title">电力系统员工</h3>
+                                <div class="box-tools">
+                                    <div class="row">
+                                        <div class="col-xs-7">
+                                            <div class="input-group input-group-sm" style="width: 150px;">
+                                                <input type="text" name="table_search" class="form-control pull-right" placeholder="Search">
+
+                                                <div class="input-group-btn">
+                                                    <button type="submit" class="btn btn-default btn-danger"><i class="fa fa-search" style="color: #fff;"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-5">
+                                            <button type="button" class="btn btn-block  btn-primary" id="new1">新增人员</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- /.box-header -->
+                            <div class="box-body">
+                                <div id="datagrid1" class="mini-datagrid" style="width: 100%; height: auto;" url="" idfield="id" multiselect="true">
+                                    <div property="columns">
+                                        <!--<div type="indexcolumn"></div>        -->
+                                        <div type="checkcolumn"></div>
+                                        <div field="xm" width="80" headeralign="center" align="center">姓名</div>
+                                        <div field="gh" width="80" headeralign="center" align="center">工号</div>
+                                        <div header="工作信息" headeralign="center">
+                                            <div property="columns">
+                                                <div field="gwss" width="80" headeralign="center" align="center">岗位授权</div>
+                                                <div field="htsj" width="100" headeralign="center" align="center">劳动合同起讫时间</div>
+                                            </div>
+                                        </div>
+                                        <div header="基本信息" headeralign="center">
+                                            <div property="columns">
+                                                <div field="csny" width="100" headeralign="center" align="center">出生日期</div>
+                                                <div field="sfz" width="100" headeralign="center" align="center">身份证号</div>
+                                                <div field="jtzz" width="100" headeralign="center">家庭住址</div>
+                                                <div field="lxdd" width="100" headeralign="center" align="center">联系电话</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="content">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="box box-warning">
+                            <div class="box-header">
+                                <h3 class="box-title">外围流动员工</h3>
+                                <div class="box-tools">
+                                    <div class="row">
+                                        <div class="col-xs-7">
+                                            <div class="input-group input-group-sm" style="width: 150px;">
+                                                <input type="text" name="table_search" class="form-control pull-right" placeholder="Search">
+
+                                                <div class="input-group-btn">
+                                                    <button type="submit" class="btn btn-default btn-danger"><i class="fa fa-search" style="color: #fff;"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-5">
+                                            <button type="button" class="btn btn-block  btn-primary" id="new2">新增人员</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- /.box-header -->
+                            <div class="box-body">
+                                <div id="datagrid2" class="mini-datagrid" style="width: 100%; height: auto;" url="" idfield="id" multiselect="true">
+                                    <div property="columns">
+                                        <!--<div type="indexcolumn"></div>        -->
+                                        <div type="checkcolumn"></div>
+                                        <div field="xm" width="80" headeralign="center" align="center">姓名</div>
+                                        <div field="sfz" width="100" headeralign="center" align="center">身份证号</div>
+                                        <div header="工作信息" headeralign="center">
+                                            <div property="columns">
+                                                <div field="gsmc" width="100" headeralign="center" align="center">公司名称</div>
+                                                <div field="jn" width="100" align="center" headeralign="center" align="center">技能</div>
+                                            </div>
+                                        </div>
+                                        <div header="基本信息" headeralign="center">
+                                            <div property="columns">
+                                                <div field="htsj" width="100" headeralign="center" align="center">从业资格证有效起讫时间</div>
+                                                <div field="lxdd" width="100" headeralign="center" align="center">联系电话</div>
+                                                <div field="hj" width="100" headeralign="center" align="center">户籍</div>
+                                                <div field="csny" width="100" headeralign="center" align="center">出生年月</div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+</body>
+</html>
+<script>
+    $(function () {
+        var grid1 = mini.get("datagrid1");
+        var data1 = [{ "id": "1", "xm": "张三1", "gh": "A-00000001", "gwss": "岗位1", "htsj": "2019-01-01", "csny": "1984-01-01", "sfz": "320282198744445557", "jtzz": "无锡市滨湖区西昌路103号", "lxdd": "13777777777" },
+        { "id": "1", "xm": "张三2", "gh": "A-00000001", "gwss": "岗位1", "htsj": "2019-01-01", "csny": "1984-01-01", "sfz": "320282198744445557", "jtzz": "无锡市滨湖区西昌路103号", "lxdd": "13777777777" },
+        { "id": "1", "xm": "张三3", "gh": "A-00000001", "gwss": "岗位1", "htsj": "2019-01-01", "csny": "1984-01-01", "sfz": "320282198744445557", "jtzz": "无锡市滨湖区西昌路103号", "lxdd": "13777777777" },
+        { "id": "1", "xm": "张三4", "gh": "A-00000001", "gwss": "岗位1", "htsj": "2019-01-01", "csny": "1984-01-01", "sfz": "320282198744445557", "jtzz": "无锡市滨湖区西昌路103号", "lxdd": "13777777777" },
+        { "id": "1", "xm": "张三5", "gh": "A-00000001", "gwss": "岗位1", "htsj": "2019-01-01", "csny": "1984-01-01", "sfz": "320282198744445557", "jtzz": "无锡市滨湖区西昌路103号", "lxdd": "13777777777" },
+        { "id": "1", "xm": "张三6", "gh": "A-00000001", "gwss": "岗位1", "htsj": "2019-01-01", "csny": "1984-01-01", "sfz": "320282198744445557", "jtzz": "无锡市滨湖区西昌路103号", "lxdd": "13777777777" },
+        { "id": "1", "xm": "张三7", "gh": "A-00000001", "gwss": "岗位1", "htsj": "2019-01-01", "csny": "1984-01-01", "sfz": "320282198744445557", "jtzz": "无锡市滨湖区西昌路103号", "lxdd": "13777777777" },
+        { "id": "1", "xm": "张三8", "gh": "A-00000001", "gwss": "岗位1", "htsj": "2019-01-01", "csny": "1984-01-01", "sfz": "320282198744445557", "jtzz": "无锡市滨湖区西昌路103号", "lxdd": "13777777777" },
+        { "id": "1", "xm": "张三9", "gh": "A-00000001", "gwss": "岗位1", "htsj": "2019-01-01", "csny": "1984-01-01", "sfz": "320282198744445557", "jtzz": "无锡市滨湖区西昌路103号", "lxdd": "13777777777" }];
+        grid1.setData(data1);
+        var grid2 = mini.get("datagrid2");
+        var data2 = [{ "id": "1", "xm": "张三", "gh": "A-00000001", "gwss": "岗位1", "htsj": "2019-01-01", "csny": "1984-01-01", "sfz": "320282198744445557", "jtzz": "无锡市滨湖区西昌路103号", "lxdd": "13777777777", "gsmc": "人才派遣公司", "jn": "jn-A" },
+        { "id": "1", "xm": "李四1", "gh": "A-00000001", "gwss": "岗位1", "htsj": "2019-01-01", "csny": "1984-01-01", "sfz": "320282198744445557", "jtzz": "无锡市滨湖区西昌路103号", "lxdd": "13777777777", "gsmc": "人才派遣公司", "jn": "jn-B" },
+        { "id": "1", "xm": "李四2", "gh": "A-00000001", "gwss": "岗位1", "htsj": "2019-01-01", "csny": "1984-01-01", "sfz": "320282198744445557", "jtzz": "无锡市滨湖区西昌路103号", "lxdd": "13777777777", "gsmc": "人才派遣公司", "jn": "jn-V" },
+        { "id": "1", "xm": "李四3", "gh": "A-00000001", "gwss": "岗位1", "htsj": "2019-01-01", "csny": "1984-01-01", "sfz": "320282198744445557", "jtzz": "无锡市滨湖区西昌路103号", "lxdd": "13777777777", "gsmc": "人才派遣公司", "jn": "jn-C" },
+        { "id": "1", "xm": "李四4", "gh": "A-00000001", "gwss": "岗位1", "htsj": "2019-01-01", "csny": "1984-01-01", "sfz": "320282198744445557", "jtzz": "无锡市滨湖区西昌路103号", "lxdd": "13777777777", "gsmc": "人才派遣公司", "jn": "jn-D" },
+        { "id": "1", "xm": "李四5", "gh": "A-00000001", "gwss": "岗位1", "htsj": "2019-01-01", "csny": "1984-01-01", "sfz": "320282198744445557", "jtzz": "无锡市滨湖区西昌路103号", "lxdd": "13777777777", "gsmc": "人才派遣公司", "jn": "jn-A" },
+        { "id": "1", "xm": "李四6", "gh": "A-00000001", "gwss": "岗位1", "htsj": "2019-01-01", "csny": "1984-01-01", "sfz": "320282198744445557", "jtzz": "无锡市滨湖区西昌路103号", "lxdd": "13777777777", "gsmc": "人才派遣公司", "jn": "jn-B" },
+        { "id": "1", "xm": "李四7", "gh": "A-00000001", "gwss": "岗位1", "htsj": "2019-01-01", "csny": "1984-01-01", "sfz": "320282198744445557", "jtzz": "无锡市滨湖区西昌路103号", "lxdd": "13777777777", "gsmc": "人才派遣公司", "jn": "jn-B" },
+        { "id": "1", "xm": "李四8", "gh": "A-00000001", "gwss": "岗位1", "htsj": "2019-01-01", "csny": "1984-01-01", "sfz": "320282198744445557", "jtzz": "无锡市滨湖区西昌路103号", "lxdd": "13777777777", "gsmc": "人才派遣公司", "jn": "jn-B" }];
+        grid2.setData(data2);
+    });
+    $("#new1").on("click", function () {
+        window.location.href = "Edit1.html";
+    });
+    $("#new2").on("click", function () {
+        window.location.href = "Edit2.html";
+    });
+</script>
