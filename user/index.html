@@ -85,14 +85,14 @@
                     <li class="header">功能菜单</li>
                     <li class="treeview">
                         <a href="#">
-                            <i class="fa fa-dashboard"></i><span>父节点1</span>
+                            <i class="fa fa-dashboard"></i><span>人员管理</span>
                             <span class="pull-right-container">
                                 <i class="fa fa-angle-left pull-right"></i>
                             </span>
                         </a>
                         <ul class="treeview-menu">
-                            <li><a href="#"><i class="fa fa-circle-o"></i>子节点1</a></li>
-                            <li><a href="#"><i class="fa fa-circle-o"></i>子节点2</a></li>
+                            <li><a href="grid.html"><i class="fa fa-circle-o"></i>电力系统员工</a></li>
+                            <li><a href="grid2.html"><i class="fa fa-circle-o"></i>外围流动员工</a></li>
                         </ul>
                     </li>
                     <li class="treeview">
@@ -148,10 +148,20 @@
         </aside>
         <div class="content-wrapper">
             <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="grid.html"></iframe>
+                <iframe class="embed-responsive-item" src="map_new.html" id="main"></iframe>
             </div>
 
         </div>
     </div>
 </body>
 </html>
+<script>
+    $(function () {
+        $(".treeview-menu a").on("click", function (e) {
+            if ($(this).prop("href")) {
+                $("#main").prop("src", $(this).prop("href"));
+            }
+            return false;
+        });
+    });
+</script>
