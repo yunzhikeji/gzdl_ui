@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>工作管理</title>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="lib/html5.js"></script>
+<script type="text/javascript" src="lib/respond.min.js"></script>
+<script type="text/javascript" src="lib/PIE_IE678.js"></script>
+<![endif]-->
+<link href="css/build.css" rel="stylesheet" type="text/css" />
+<link href="css/daily.css" rel="stylesheet" type="text/css">
+<link href="css/datePicker.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/1.0.7/iconfont.css" rel="stylesheet" type="text/css" />
+<!--[if IE 6]>
+<script type="text/javascript" src="http://lib.h-ui.net/DD_belatedPNG_0.0.8a-min.js" ></script>
+<script>DD_belatedPNG.fix('*');</script>
+<![endif]-->
+
+</head>
+
+<body>
+<div class="pd-20">
+	<form action="" method="post" class="form form-horizontal" id=" ">
+	  <table class="table">
+    <thead class="text-c">
+    <tr>
+        <th colspan="2">录入时间</th>
+         <td width="70%"><input type="text" id="datePicker3" class="date_picker" placeholder="点击选择日期"/></td>
+      </tr>
+    </thead>
+      <tbody>
+      <tr class="text-c">
+        <th colspan="2">项目名称</th>
+        <td><input type="text" width="300px" /></td>
+      </tr>
+      <tr class="text-c">
+        <th width="15%" rowspan="2">项目时间</th>
+        <td width="15%" class="text-b">开始时间</td>
+        <td><input type="text" id="datePicker" class="date_picker" placeholder="点击选择日期"/></td>
+      </tr>
+     <tr class="text-c">
+        <td class="text-b">结束时间</td>
+        <td><input type="text" id="datePicker2" class="date_picker" placeholder="点击选择日期"/></td>
+      </tr>
+      <tr class="text-c">
+        <th colspan="2">承包单位</th>
+        <td><input type="text" width="300px" /></td>
+      </tr>
+      <tr class="text-c">
+       <th colspan="2">承包单位负责人</th>
+        <td><input type="text" /></td>
+      </tr>
+      <tr class="text-c">
+       <th colspan="2">联系电话号码</th>
+        <td><input type="text" /></td>
+      </tr>
+       <tr class="text-c">
+       <th colspan="2">监理单位</th>
+        <td><input type="text" /></td>
+      </tr>
+      <tr class="text-c">
+       <th colspan="2">监理单位负责人</th>
+        <td><input type="text" /></td>
+      </tr>
+      <tr class="text-c">
+       <th colspan="2">联系电话号码</th>
+        <td><input type="text" /></td>
+      </tr>
+      <tr class="text-c">
+       <th height="150" colspan="2">进度情况</th>
+        <td><input type="text" style="padding:20px 0 20px 0"/></td>
+      </tr>
+      <tr class="text-c">
+       <th style="background:#FFF;border: #FFF; text-align:center;" colspan="3"><a id="save" href="#" class="button orange smallrouded"><i class="Hui-iconfont">&nbsp;&nbsp;&nbsp;&#xe66c;</i>重置&nbsp;&nbsp;&nbsp;</a>  <a id="save" href="#" class="button blue smallrouded"><i class="Hui-iconfont">&nbsp;&nbsp;&nbsp;&#xe632;</i>保存&nbsp;&nbsp;&nbsp;</a></th>
+        </tr>
+      </tbody>
+    </table>
+    
+		
+		</form>
+        
+</div>
+
+<script type="text/javascript" src="js/js/jquery.min.js"></script>
+<script type="text/javascript" src="js/js/jquery.date_input.pack.js"></script> 
+</head>
+<body>
+<script type="text/javascript">
+$(function(){
+	$('#datePicker').date_input();
+	$('#datePicker2').date_input();
+	$('#datePicker3').date_input();
+	})
+</script>
+</body>
+</html>
