@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>列表</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Content/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link href="Content/dist/css/AdminLTE.min.css" rel="stylesheet" />
+
+    <link href="./Content/dist/css/skins/_all-skins.css" rel="stylesheet" />
+    <link href="js/miniui/themes/default/miniui.css" rel="stylesheet" />
+    <link href="js/miniui/themes/blue2010/skin.css" rel="stylesheet" />
+
+    <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="Content/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="Content/dist/js/app.min.js"></script>
+    <script src="js/miniui/miniui.js"></script>
+    <script src="js/miniui/locale/zh_CN.js"></script>
+</head>
+<!--<body class="hold-transition skin-blue layout-boxed sidebar-mini">-->
+    <body class="hold-transition skin-blue sidebar-mini">
+    <div class="wrapper">
+        <header class="main-header">
+            <a href="../../index2.html" class="logo">
+                <!-- mini logo for sidebar mini 50x50 pixels -->
+                <span class="logo-mini">南方电网</span>
+                <!-- logo for regular state and mobile devices -->
+                <span class="logo-lg">中国南方电网</span>
+            </a>
+            <nav class="navbar navbar-static-top">
+                <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown user user-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                <img src="Content/dist/img/avatar5.png" class="user-image" />
+                                <span class="hidden-xs">Administrator</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <!-- User image -->
+                                <li class="user-header">
+                                    <img src="Content/dist/img/avatar5.png" class="img-circle" alt="User Image">
+
+                                    <p>
+                                        Administrator - 系统管理员
+                  <small>超级权限请谨慎使用</small>
+                                    </p>
+                                </li>
+                                <!-- Menu Body -->
+                                <li class="user-body"></li>
+                                <!-- Menu Footer-->
+                                <li class="user-footer">
+                                    <div class="pull-right">
+                                        <a href="#" class="btn btn-default btn-flat">注销</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+        </header>
+        <aside class="main-sidebar">
+            <section class="sidebar">
+                <form action="#" method="get" class="sidebar-form">
+                    <div class="input-group">
+                        <input type="text" name="q" class="form-control" placeholder="输入搜索内容">
+                        <span class="input-group-btn">
+                            <button type="submit" name="search" id="search-btn" class="btn btn-flat">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </span>
+                    </div>
+                </form>
+                <ul class="sidebar-menu">
+                    <li class="header">功能菜单</li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-dashboard"></i><span>人员管理</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="grid.html"><i class="fa fa-circle-o"></i>电力系统员工</a></li>
+                            <li><a href="grid2.html"><i class="fa fa-circle-o"></i>外围流动员工</a></li>
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-files-o"></i><span>父节点2</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="#"><i class="fa fa-circle-o"></i>子节点1</a></li>
+                            <li><a href="#"><i class="fa fa-circle-o"></i>子节点2</a></li>
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-pie-chart"></i><span>父节点3</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="#"><i class="fa fa-circle-o"></i>子节点1</a></li>
+                            <li><a href="#"><i class="fa fa-circle-o"></i>子节点2</a></li>
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-laptop"></i><span>父节点4</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="#"><i class="fa fa-circle-o"></i>子节点1</a></li>
+                            <li><a href="#"><i class="fa fa-circle-o"></i>子节点2</a></li>
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-edit"></i><span>父节点5</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="#"><i class="fa fa-circle-o"></i>子节点1</a></li>
+                            <li><a href="#"><i class="fa fa-circle-o"></i>子节点2</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </aside>
+        <div class="content-wrapper">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="map_new.html" id="main"></iframe>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    $(function () {
+        $(".treeview-menu a").on("click", function (e) {
+            if ($(this).prop("href")) {
+                $("#main").prop("src", $(this).prop("href"));
+            }
+            return false;
+        });
+    });
+</script>
