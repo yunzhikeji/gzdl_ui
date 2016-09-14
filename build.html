@@ -2,59 +2,78 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>工地管理</title>
+<title>组织管理</title>
+<link href="css/datePicker1.css" rel="stylesheet" type="text/css" media="all" />
 <link href="css/index.css" rel="stylesheet" type="text/css" />
 <link href="css/1.0.7/iconfont.css" rel="stylesheet" type="text/css" />
 
 </head>
 
-<body>
- <div style="background:#FFF; overflow:auto; width:100%;height:836px">
-  <table class="table">
+<body style="background:#e9eef0;">
+ <div class="bht">
+ <div class="bh text-d">施工单位列表
+<input type="text" class="date_picker" placeholder="单位名称" style="width:150px"/>
+<button class="loginBtn1 orange smallrounded" onClick="refresh();" style="margin-left:5px;"><i class="Hui-iconfont">&#xe665;</i></button>
+ <button class="button blue bla smallrounded" style="font-size:14px; line-height:14px;margin-left:72%"; onClick="ypgy('组织管理','builded.html','1024px','768px')" ><i class="Hui-iconfont">&nbsp;&#xe600;&nbsp;</i>添加施工单位</button></div>
+ <div class="sJ0"></div>
+ <div style="height:740px">
+  <table class="table" style="width:98%; margin:5px auto">
     <thead class="text-c">
-    <tr class="text-d">
-        <th width="9%"><button class="button orange bla smallrounded" style="font-size:14px; line-height:14px" ><i class="Hui-iconfont">&nbsp;&#xe609;&nbsp;</i>批量删除</button></th>
-        <th width="4%" style="font-size:14px;">序号</th>
-        <th width="10%" style="font-size:14px;">工地名称</th>
-        <th width="15%" style="font-size:14px;">位置</th>
-        <th width="10%" style="font-size:14px;">监控视频显示个数</th>
-        <th width="16%" style="font-size:14px;">承包单位信息</th>
-        <th width="16%" style="font-size:14px;">监理单位信息</th>
+    <tr bgcolor="#f6f6f6">
+        
+        <th width="5%" style="font-size:14px;">序号</th>
+        <th width="25%" style="font-size:14px;">单位名称</th>
+        <th width="40%" style="font-size:14px;">单位所属区域</th>
         <th width="10%" style="font-size:14px;"></th>
         <th width="10%" style="font-size:14px;"></th>
       </tr>
     </thead>
       <tbody>
       <tr class="text-c">
-        <td class="text-c"><input name="" type="checkbox" value="" /></td>
-        <td>1</td>
+        <td class="text-c">1</td>
+        <td>广州建设大队</td>
         <td>越秀城南区</td>
-        <td>经度415°<br />纬度325°</td>
-        <td>4</td>
-        <td>单位名称：阳光一百<br />负责人：宋永康<br />联系电话：18251569424</td>
-        <td>单位名称：阳光一百<br />负责人：宋永康<br />联系电话：18251569424</td>
-        <td><a href="javascript:;" onClick="ypgy('工地管理','builded.html','1024px','768px')" title="工地管理" target="_self" class="button blue bigrounded bla" style="font-size:14px;"><i class="Hui-iconfont">&nbsp;&nbsp;&nbsp;&#xe647;</i>编辑&nbsp;&nbsp;&nbsp;</a></td>
-        <td><button class="button orange bla smallrounded" style="font-size:14px;line-height:14px"><i class="Hui-iconfont">&nbsp;&#xe609;&nbsp;</i>删除</button></td>
+        <td><a href="javascript:;" onClick="ypgy('组织管理','builded.html','1024px','768px')" title="工地管理" target="_self" class="button blue bigrounded bla" style="font-size:14px;line-height:14px"><i class="Hui-iconfont">&nbsp;&nbsp;&nbsp;&#xe647;</i>编辑&nbsp;&nbsp;&nbsp;</a></td>
+        <td><button class="button orange bla smallrounded" style="font-size:14px;line-height:14px" onClick="OnUp();"><i class="Hui-iconfont">&nbsp;&#xe609;&nbsp;</i>删除</button></td>
+
+      </tr>
+      <tr class="text-c">
+        <td class="text-c">1</td>
+        <td>广州建设大队</td>
+        <td>越秀城南区</td>
+        <td><a href="javascript:;" onClick="ypgy('组织管理','builded.html','1024px','768px')" title="工地管理" target="_self" class="button blue bigrounded bla" style="font-size:14px;line-height:14px"><i class="Hui-iconfont">&nbsp;&nbsp;&nbsp;&#xe647;</i>编辑&nbsp;&nbsp;&nbsp;</a></td>
+        <td><button class="button orange bla smallrounded" style="font-size:14px;line-height:14px" onClick="OnUp();"><i class="Hui-iconfont">&nbsp;&#xe609;&nbsp;</i>删除</button></td>
+
+      </tr>
+      <tr class="text-c">
+        <td class="text-c">1</td>
+        <td>广州建设大队</td>
+        <td>越秀城南区</td>
+        <td><a href="javascript:;" onClick="ypgy('组织管理','builded.html','1024px','768px')" title="工地管理" target="_self" class="button blue bigrounded bla" style="font-size:14px;line-height:14px"><i class="Hui-iconfont">&nbsp;&nbsp;&nbsp;&#xe647;</i>编辑&nbsp;&nbsp;&nbsp;</a></td>
+        <td><button class="button orange bla smallrounded" style="font-size:14px;line-height:14px" onClick="OnUp();"><i class="Hui-iconfont">&nbsp;&#xe609;&nbsp;</i>删除</button></td>
+
+      </tr>
+      <tr class="text-c">
+        <td class="text-c">1</td>
+        <td>广州建设大队</td>
+        <td>越秀城南区</td>
+        <td><a href="javascript:;" onClick="ypgy('组织管理','builded.html','1024px','768px')" title="工地管理" target="_self" class="button blue bigrounded bla" style="font-size:14px;line-height:14px"><i class="Hui-iconfont">&nbsp;&nbsp;&nbsp;&#xe647;</i>编辑&nbsp;&nbsp;&nbsp;</a></td>
+        <td><button class="button orange bla smallrounded" style="font-size:14px;line-height:14px" onClick="OnUp();"><i class="Hui-iconfont">&nbsp;&#xe609;&nbsp;</i>删除</button></td>
 
       </tr>
      
       </tbody>
     </table>
     </div>
-    <div class="digg"> 
-   <span class="disabled">&lt; </span>
-<span class="current">1</span>
-<a href="#?page=2">2</a>
-<a href="#?page=3">3</a>
-<a href="#?page=4">4</a>
-<a href="#?page=5">5</a>
-<a href="#?page=6">6</a>
-<a href="#?page=7">7</a>
-...
-<a href="#?page=199">199</a>
-<a href="#?page=200">200</a>
-<a href="#?page=2"> 
-&gt; </a></div>
+   <div class="sJ0"></div>
+   <div class="text-e bb">
+    <button class="button white bla smallrounded" style="font-size:14px;line-height:14px"><i class="Hui-iconfont">&nbsp;&#xe678;&nbsp;</i>上一页</button>
+    <button class="button white bla smallrounded" style="font-size:14px;line-height:14px"><i class="Hui-iconfont">&nbsp;&#xe67a;&nbsp;</i>下一页</button>
+    <span style="margin-left:10px">共&nbsp;<input type="text" class="date_picker" placeholder="&nbsp;1"  style="width:20px"/>&nbsp;页</span>
+   </div>
+
+</div>
+  
 
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/2.1/layer.js"></script>
@@ -86,10 +105,8 @@ function ypgy(title,url,w,h){
     area: [w, h],
     content: url //iframe的url
 }); 
-}
-
-
-	
+}	
 </script>
+
 </body>
 </html>

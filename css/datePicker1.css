@@ -1,6 +1,7 @@
 @charset "utf-8";
 .date_picker{width:100px;background: #fefefe;border: 1px solid #bbb;font-size:14px;color: #333;padding:7px;border-radius:3px;}
 .date_picker1{width:150px;background: #fefefe;border: 1px solid #bbb;font-size:14px;color: #333;padding:7px;border-radius:3px;}
+
 /*---------------------------------------demo css--------------------------------------------*/
 .date_selector, .date_selector *{width: auto;height: auto;border: none;background: none;margin: 0;padding: 0;text-align: left;text-decoration: none;}
 .date_selector{background:#fbfbfb;border: 1px solid #ccc;padding: 10px;margin:0;margin-top:-1px;position: absolute;z-index:100000;display:none;border-radius: 3px;box-shadow: 0 0 5px #aaa;box-shadow:0 2px 2px #ccc; width:230px;}

@@ -3,12 +3,13 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<title>工地管理</title>
+<title>组织管理</title>
 <!--[if lt IE 9]>
 <script type="text/javascript" src="lib/html5.js"></script>
 <script type="text/javascript" src="lib/respond.min.js"></script>
 <script type="text/javascript" src="lib/PIE_IE678.js"></script>
 <![endif]-->
+<link href="css/datePicker1.css" rel="stylesheet" type="text/css" media="all" />
 <link href="css/build.css" rel="stylesheet" type="text/css" />
 <link href="css/1.0.7/iconfont.css" rel="stylesheet" type="text/css" />
 <!--[if IE 6]>
@@ -24,51 +25,26 @@
 	  <table class="table">
     <thead class="text-c">
     <tr>
-        <th colspan="2">工地名称</th>
-         <td width="70%"><input type="text" /></td>
+        <th width="15%">单位名称</th>
+         <td width="70%"><input type="text" class="date_picker" style="width:400px"/></td>
       </tr>
     </thead>
       <tbody>
       <tr class="text-c">
-        <th width="15%" rowspan="2">工地位置</th>
-        <td width="15%" class="text-b">经度</td>
-        <td><input type="text" /></td>
-      </tr>
-     <tr class="text-c">
-        <td class="text-b">纬度</td>
-        <td><input type="text" /></td>
-      </tr>
-       <tr class="text-c">
-       <th colspan="2">监控视频显示个数</th>
-        <td><input name="vd" type="radio" value="1" checked="checked"/>1 <input name="vd" type="radio" value="4" />4 <input name="vd" type="radio" value="6" />6</td>
+        <th>单位所属区域</th>
+        <td><input type="text" class="date_picker" style="width:400px"/></td>
       </tr>
       <tr class="text-c">
-       <th colspan="2">承包单位</th>
-        <td><input type="text" width="300px" /></td>
+       <th>管理员账号</th>
+        <td><input type="text" class="date_picker" style="width:400px"/></td>
       </tr>
       <tr class="text-c">
-       <th colspan="2">承包单位负责人</th>
-        <td><input type="text" /></td>
+       <th>密码</th>
+        <td><input type="password" class="date_picker" style="width:400px"/></td>
       </tr>
       <tr class="text-c">
-       <th colspan="2">联系电话号码</th>
-        <td><input type="text" /></td>
+        <th style="background:#FFF;border: #FFF; text-align:center;" colspan="2"><a id="save" href="#" class="button orange smallrouded"><i class="Hui-iconfont">&nbsp;&nbsp;&nbsp;&#xe66c;</i>重置&nbsp;&nbsp;&nbsp;</a>  <a id="save" href="#" class="button blue smallrouded"><i class="Hui-iconfont">&nbsp;&nbsp;&nbsp;&#xe632;</i>保存&nbsp;&nbsp;&nbsp;</a></th>
       </tr>
-       <tr class="text-c">
-       <th colspan="2">监理单位</th>
-        <td><input type="text" /></td>
-      </tr>
-      <tr class="text-c">
-       <th colspan="2">监理单位负责人</th>
-        <td><input type="text" /></td>
-      </tr>
-      <tr class="text-c">
-       <th colspan="2">联系电话号码</th>
-        <td><input type="text" /></td>
-      </tr>
-      <tr class="text-c">
-       <th style="background:#FFF;border: #FFF; text-align:center;" colspan="3"><a id="save" href="#" class="button orange smallrouded"><i class="Hui-iconfont">&nbsp;&nbsp;&nbsp;&#xe66c;</i>重置&nbsp;&nbsp;&nbsp;</a>  <a id="save" href="#" class="button blue smallrouded"><i class="Hui-iconfont">&nbsp;&nbsp;&nbsp;&#xe632;</i>保存&nbsp;&nbsp;&nbsp;</a></th>
-        </tr>
       </tbody>
     </table>
     

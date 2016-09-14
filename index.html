@@ -24,16 +24,15 @@
 
 <div class="HuiTab">
   <div class="tabBar cl">
-  <span class="tA0"><a href="daily.html" target="myiframe">日常工作</a></span>
-  <span class="tA0"><a href="javascript:void(0)" id="tu" onClick="changeToTu();"target="myiframe">分布图</a></span>
-  <span class="tA0"><a href="javascript:void(0)" id="td" onClick="changeToTd();" target="myiframe">工地管理</a></span>
+  <span class="tA0"><a href="map_new.html" target="myiframe">分布图</a></span>
+  <span class="tA0"><a href="javascript:void(0)" id="td" onClick="changeToTd();" target="myiframe">组织管理</a></span>
   <span class="tA0"><a href="javascript:void(0)" id="tz" onClick="changeToTz();" target="myiframe">设备管理</a></span>
   <span class="tA0"><a href="javascript:void(0)" id="tj" onClick="changeToTj();" target="myiframe">视频管理</a></span>
   </div>
   <div class="sJ0"></div>
   <div class="tabCon">
   
- <iframe name="myiframe" src="daily.html" id="iframepage" frameborder="0" scrolling="no" width="100%" height="862px" marginheight="0" marginwidth="0" style="background:#FFF"></iframe>  
+ <iframe name="myiframe" src="map_new.html" id="iframepage" frameborder="0" scrolling="no" width="100%" height="862px" marginheight="0" marginwidth="0" style="background:#FFF"></iframe>  
 
 </div>
  
@@ -74,10 +73,7 @@ function changeToTd()
 	{
 		$("#iframepage").attr('src',"vedio.html"); 
 	}	
-	function changeToTu()
-	{
-		$("#iframepage").attr('src',"map_new.html"); 
-	}					
+				
 </script>
 </body>
 </html>
