@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<title>设备租售</title>
+<title>设备入库</title>
 <!--[if lt IE 9]>
 <script type="text/javascript" src="lib/html5.js"></script>
 <script type="text/javascript" src="lib/respond.min.js"></script>
@@ -35,15 +35,7 @@
         <td><input type="text" class="date_picker" style="width:400px"/></td>
       </tr>
       <tr class="text-c">
-       <th>出租至</th>
-        <td><select class="date_picker" style="width:420px">
-            <option>未出租</option>
-            <option>湖北建筑公司</option>
-			<option>北京建筑公司</option>
-            </select></td>
-      </tr>
-      <tr class="text-c">
-        <th style="background:#FFF;border: #FFF; text-align:center;" colspan="2"> <a id="save" href="#" class="button blue smallrouded"><i class="Hui-iconfont">&nbsp;&nbsp;&nbsp;&#xe632;</i>保存&nbsp;&nbsp;&nbsp;</a></th>
+        <th style="background:#FFF;border: #FFF; text-align:center;" colspan="2"> <a id="save" href="#" class="button orange smallrouded"><i class="Hui-iconfont">&nbsp;&nbsp;&nbsp;&#xe66c;</i>重置&nbsp;&nbsp;&nbsp;</a> <a id="save" href="#" class="button blue smallrouded"><i class="Hui-iconfont">&nbsp;&nbsp;&nbsp;&#xe632;</i>保存&nbsp;&nbsp;&nbsp;</a></th>
       </tr>
       </tbody>
     </table>
@@ -52,23 +44,7 @@
 		</form>
 
 </div>
-<script>
-var unSelected = "#999";
-var selected = "#333";
-$(function () {
-$("select").css("color", unSelected);
-$("option").css("color", selected);
-$("select").change(function () {
-var selItem = $(this).val();
-if (selItem == $(this).find('option:first').val()) {
-$(this).css("color", unSelected);
-} else {
-$(this).css("color", selected);
-}
-});
-})
 
-</script>
         
 </body>
 </html>
