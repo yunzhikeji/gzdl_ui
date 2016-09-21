@@ -258,14 +258,14 @@
 
 			</div>
 		</div>
-		<div class="yzvedio01">
+		<div class="yzvedio01" >
 			<div class="yzr1" style="margin-left: 1%; margin-top: 5px;">
 				<input type="button" class="button white" onclick="addcamera()" value="开始布控" />
 				<input type="button" class="button white" onclick="sayTo();" value="开始对讲"  id="says"/>
 				<input type="button" class="button white" onclick="recordToWeb();" value="手动录制"  id="record"/>
 				<input type="checkbox" id="check" onclick="recordToWeb();" >报警时录制</input>
 				<input type="button" class="button white" onclick="video();" value="录像回放"  />
-                <input type="button" class="button white" onClick="ypgy('工作票显示','work.html','800px','600px')" value="工作票"  />
+                <input type="button" class="button white" onclick="openWin('work.html', 800, 600)" value="工作票"  />
 			</div>
 			<div class="yzr2">
 				<table id="myTable" class="tt" width="100%" border="0"
@@ -283,20 +283,17 @@
 			</div>
 		</div>
 	</div>
- 
-<script type="text/javascript" src="js/2.1/layer.js"></script>   
-<script type="text/javascript">    
-    function ypgy(title,url,w,h){
-	layer.open({
-    type: 2,
-    title: title,
-    shadeClose: true,
-    shade: 0,
-    area: [w, h],
-    content: url //iframe的url
-}); 
-}
-</script>	
+<script language="javascript"> 
+      function openWin(u, w, h) { 
+            var l = (screen.width - w) / 2; 
+            var t = (screen.height - h) / 2; 
+            var s = 'width=' + w + ', height=' + h + ', top=' + t + ', left=' + l; 
+            s += ', toolbar=no, scrollbars=no, menubar=no, location=no, resizable=no'; 
+            open(u, 'oWin', s); 
+      } 
+</script>   
+</script>
+	
 
 </body>
 </html>
