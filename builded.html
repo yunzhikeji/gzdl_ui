@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<title>组织管理</title>
+<title>施工单位</title>
 <!--[if lt IE 9]>
 <script type="text/javascript" src="lib/html5.js"></script>
 <script type="text/javascript" src="lib/respond.min.js"></script>
@@ -31,20 +31,34 @@
     </thead>
       <tbody>
       <tr class="text-c">
-        <th>单位所属区域</th>
-        <td><select class="date_picker" style="width:418px">
-            <option>越秀区</option>
-            <option>黄浦区</option>
-			<option>白云区</option>
-            </select></td>
+        <th rowspan="3">所属区域</th>
+        <td style="padding-top:7px;padding-bottom:7px;"><select class="date_picker" id="s_province" name="s_province" style="width:420px"></select></td>
       </tr>
       <tr class="text-c">
-       <th>管理员账号</th>
-        <td><input type="text" class="date_picker" style="width:400px"/></td>
+        <td style="padding-top:7px;padding-bottom:7px;"><select class="date_picker" id="s_city" name="s_city" style="width:420px"></select></td>
       </tr>
       <tr class="text-c">
-       <th>密码</th>
-        <td><input type="password" class="date_picker" style="width:400px"/></td>
+        <td style="padding-top:7px;padding-bottom:7px;"><select class="date_picker1" id="s_county" name="s_county" style="width:420px"></select></td>
+      
+      <script class="resources library" src="js/area.js" type="text/javascript"></script>
+    
+    <script type="text/javascript">_init_area();</script>
+        <span id="show"></span>
+      </tr>
+      <tr class="text-c">
+        <th>联系人</th>
+         <td><input type="text" class="date_picker" style="width:400px"/></td>
+      </tr>
+      <tr class="text-c">
+        <th>联系电话</th>
+         <td><input type="text" class="date_picker" style="width:400px"/></td>
+      </tr>
+      <tr class="text-c">
+        <th>组织类别</th>
+         <td><input name="vd" type="radio" value="1" checked="checked"/> 
+          供电局&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input name="vd" type="radio" value="2" /> 
+            施工单位</td>
       </tr>
       <tr class="text-c">
         <th style="background:#FFF;border: #FFF; text-align:center;" colspan="2"><a id="save" href="#" class="button orange smallrouded"><i class="Hui-iconfont">&nbsp;&nbsp;&nbsp;&#xe66c;</i>重置&nbsp;&nbsp;&nbsp;</a>  <a id="save" href="#" class="button blue smallrouded"><i class="Hui-iconfont">&nbsp;&nbsp;&nbsp;&#xe632;</i>保存&nbsp;&nbsp;&nbsp;</a></th>
@@ -56,5 +70,14 @@
 		</form>
         
 </div>
+<script type="text/javascript">
+var Gid  = document.getElementById ;
+var showArea = function(){
+	Gid('show').innerHTML = "<h3>省" + Gid('s_province').value + " - 市" + 	
+	Gid('s_city').value + " - 县/区" + 
+	Gid('s_county').value + "</h3>"
+							}
+Gid('s_county').setAttribute('onchange','showArea()');
+</script>
 </body>
 </html>
