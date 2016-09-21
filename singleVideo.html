@@ -2,15 +2,20 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <title>监控系统</title>
-<link type="text/css" rel="stylesheet"
-	href="css/test.css" />
-<link
-	href="css/Aliiconfont/iconfont.css"
-	rel="stylesheet" type="text/css" />
-<script type="text/javascript"
-	src="js/jquery.js"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="lib/html5.js"></script>
+<script type="text/javascript" src="lib/respond.min.js"></script>
+<script type="text/javascript" src="lib/PIE_IE678.js"></script>
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="css/test.css" />
+<link href="css/Aliiconfont/iconfont.css" rel="stylesheet" type="text/css" />
+<!--[if IE 6]>
+<script type="text/javascript" src="http://lib.h-ui.net/DD_belatedPNG_0.0.8a-min.js" ></script>
+<script>DD_belatedPNG.fix('*');</script>
+<![endif]-->
+<script type="text/javascript" src="js/jquery.js"></script>
 <Script language="javascript">
 	function GetRequest() {
 		var url = location.search; //获取url中"?"符后的字串 
@@ -286,7 +291,7 @@
     type: 2,
     title: title,
     shadeClose: true,
-    shade: 0.8,
+    shade: 0,
     area: [w, h],
     content: url //iframe的url
 }); 
