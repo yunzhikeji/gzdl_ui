@@ -21,6 +21,7 @@
             if (!$("#no").val()) {
                 alert("请输入需要搜索的设备编码");
             } else {
+			map.clearOverlays(); 
                 getData($("#no").val());
             }
 
@@ -99,6 +100,7 @@
             type: 'post',
             async: false,
             url: '${pageContext.request.contextPath }/camera/getcameras.action',
+            //url:"http://114.55.132.15:8080/gzdl/camera/getcameras",
             data: { number: number },
             contentType: 'application/json;charset=utf-8',
             success: function (data) {//返回json结果
