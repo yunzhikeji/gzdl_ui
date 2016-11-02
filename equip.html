@@ -2,6 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <title>设别管理</title>
 <link href="css/datePicker1.css" rel="stylesheet" type="text/css" media="all" />
 <link href="css/index.css" rel="stylesheet" type="text/css" />
@@ -12,6 +13,16 @@
 <body style="background:#e9eef0;">
  <div class="bht">
  <div class="bh text-d">设备列表
+  <span style="margin-left:20px"><select class="date_picker" id="s_province" name="s_province"></select>  
+    <select class="date_picker" id="s_city" name="s_city" ></select>  
+    <select class="date_picker1" id="s_county" name="s_county"></select>
+    <script class="resources library" src="js/area.js" type="text/javascript"></script>
+    
+    <script type="text/javascript">_init_area();</script></span><span id="show"></span>
+    
+<input type="text" class="date_picker" placeholder="施工单位名称" style="width:150px"/>
+<input type="text" class="date_picker" placeholder="设备编号" style="width:100px"/>
+<button class="loginBtn1 orange smallrounded" onClick="refresh();" style="margin-left:5px;"><i class="Hui-iconfont">&#xe665;</i></button> 
  <button class="button white bigrounded bla" style="font-size:14px; line-height:14px;margin-left:20px;";>&nbsp;全部&nbsp;</button>
  <button class="button white bigrounded bla" style="font-size:14px; line-height:14px;";>已出租</button>
  <button class="button white bigrounded bla" style="font-size:14px; line-height:14px;";>未出租</button>
@@ -23,11 +34,12 @@
     <tr bgcolor="#f6f6f6">
         
         <th width="5%" style="font-size:14px;">序号</th>
-        <th width="12%" style="font-size:14px;">设备编号</th>
-        <th width="12%" style="font-size:14px;">SIP编号</th>
-        <th width="22%" style="font-size:14px;">单位名称</th>
+        <th width="10%" style="font-size:14px;">设备编号</th>
+        <th width="10%" style="font-size:14px;">SIP编号</th>
+        <th width="21%" style="font-size:14px;">单位名称</th>
         <th width="13%" style="font-size:14px;"></th>
         <th width="13%" style="font-size:14px;"></th>
+        <th width="18%" style="font-size:14px;"></th>
         <th width="13%" style="font-size:14px;"></th>
       </tr>
     </thead>
@@ -39,6 +51,7 @@
         <td>越秀城南区ce</td>
         <td><a href="javascript:;"onClick="ypgy('设备租售','equiped.html','1024px','768px')" title="设备租售" target="_self" class="button blue bigrounded bla" style="font-size:14px;line-height:14px"><i class="Hui-iconfont">&nbsp;&nbsp;&nbsp;&#xe647;</i>编辑&nbsp;&nbsp;&nbsp;</a></td>
         <td><a href="javascript:;" onClick="ypgy('设备租售','equiped.html','1024px','768px')" title="设备租售" target="_self" class="button blue bigrounded bla" style="font-size:14px;line-height:14px"><i class="Hui-iconfont">&nbsp;&nbsp;&nbsp;&#xe672;</i>出租&nbsp;&nbsp;&nbsp;</a></td>
+        <td><a href="javascript:;" onClick="ypgy('历史告警记录','alarm.html','1024px','768px')" title="历史告警记" target="_self" class="button blue bigrounded bla" style="font-size:14px;line-height:14px"><i class="Hui-iconfont">&nbsp;&nbsp;&nbsp;&#xe603;</i>历史告警记录</a></td>
         <td><button class="button orange bla smallrounded" style="font-size:14px;line-height:14px" onClick="OnUp();"><i class="Hui-iconfont">&nbsp;&#xe609;&nbsp;</i>删除</button></td>
 
       </tr>
